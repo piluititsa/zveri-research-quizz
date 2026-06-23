@@ -10,8 +10,8 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:url" content="https://piluititsa.github.io/zveri-research-quizz/fox.html">
-<meta property="og:title" content="I'm the Fox — What data beast are you?">
-<meta property="og:description" content="A mini-quiz on customer-experience & AI stats. Answer the questions and find out which beast you are.">
+<meta property="og:title" content="I'm the Fox in Data Beast Quizz!">
+<meta property="og:description" content="Sharp and quick to read the room. The numbers are almost tame — just top up your intuition with facts.">
 <meta property="og:image" content="https://piluititsa.github.io/zveri-research-quizz/assets/fox-lg.jpg">
 <meta property="og:image:width" content="640">
 <meta property="og:image:height" content="640">
@@ -848,7 +848,7 @@ function renderResult(){
 
 /* ---------- шеринг и скачивание ---------- */
 function shareText(beast, correct, total){
-  return UI().shareText(beast.name, correct, total);
+  return "I'm the " + beast.name + " in Data Beast Quizz! " + beast.desc;
 }
 function shareUrl(){ return location.origin + location.pathname; }  // адрес страницы-результата (со своим превью зверя)
 

@@ -884,7 +884,7 @@ function shareControls(beastKey, beast, correct, total){
       const file = blob ? new File([blob], "data-beast.png", {type:"image/png"}) : null;
       try{
         if(file && navigator.canShare && navigator.canShare({files:[file]})){
-          await navigator.share({ text:txt, url, files:[file] });
+          await navigator.share({ text: txt + " " + url, files:[file] });
         } else {
           await navigator.share({ text:txt, url });
         }
